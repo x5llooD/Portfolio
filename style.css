@@ -42,27 +42,35 @@ body {
   padding: 0 1rem;
 }
 .project-card {
-  background: white;
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-  text-align: left;
+  background-color: #ffffff;       /* white card */
+  color: #222222;                  /* dark text for readability */
+  border: 1px solid #ddd;          /* subtle border */
+  border-radius: 8px;              /* rounded corners */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* soft shadow */
+  padding: 16px;
+  margin: 12px;
+  transition: all 0.3s ease;
 }
-.project-card:hover p {
-  color: #ffffff; /* stays readable on hover */
-  filter: none; /* remove any blur if applied */
+
+.project-card:hover {
+  background-color: #f5f5f5;       /* light gray hover, less harsh than full dark */
+  transform: translateY(-5px);     /* subtle lift */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* slightly stronger shadow */
 }
+
 .project-card h3 {
-  margin-bottom: 10px;
-  font-size: 1.3rem;
-  color: #4e73df;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
+
 .project-card p {
-  font-size: 0.95rem;
-  color: #555; /* Light mode color */
-  transition: color 0.3s, text-shadow 0.3s; /* Smooth effect when switching modes */
-  font-style: italic; /* Optional: makes description slightly stylish */
+  color: #222222;
+  transition: color 0.3s ease, filter 0.3s ease;
+}
+
+.project-card:hover p {
+  color: #111111; /* stays readable, slight darkening on hover */
+  filter: none;   /* remove any blur */
 }
 .project-card img, .project-card video {
   width: 100%;
