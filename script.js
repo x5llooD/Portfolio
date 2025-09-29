@@ -1,5 +1,12 @@
 // Portfolio projects (easy to add more here)
 const projects = [
+   {
+    title: "Combat & Movement Systems",
+    type: "video",
+    src: "videos/Combat_&_Movement_Systems.mp4",
+    description: "Combat with smooth movement."
+  },
+
   {
     title: "Daily Rewards",
     type: "video",
